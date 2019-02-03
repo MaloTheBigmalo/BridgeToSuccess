@@ -13,8 +13,11 @@ int main(void)
     x = y;
     y = temp;
 
+    // just to test what I am learning
+
+
     printf("x is now %i\n", x);
     printf("y is now %i\n", y);
-
-    printf("End of the program. Day two")
+    
+    printf("End of the program. Day one")
 }
