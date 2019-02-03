@@ -9,7 +9,7 @@ void swap(int *a, int *b)
 
 int main(void)
 {
-    int x = 116;
+    int x = 34;
     int y = 50;
 
     printf("x is %i\n", x);
