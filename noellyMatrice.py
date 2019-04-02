@@ -16,24 +16,27 @@ def prod(M):
         resultat = resultat*M[i]
     return resultat
 
-def afficheCoefficient(M):
-    for i in range(np.size(M)):
-        print("i = ",i, "valeur = ",M[i])
+def afficher(A):
+    for i in range(np.size(A)):
+        print("i = ",i, "valeur = ",A[i])
 
+def zeros(a,b):
+    A = np.array([0*x for x in range(a,b)])
+    return A
+
+
+M = zeros(1,12)
 n = 0
-A = np.array([0,0,0,0,0,0,0,0,0,0,0])
-#afficheCoefficient(A)
+afficher(M)
 
-while prod(A) < 1 :
+while prod(M) < 1 :
     fig = randint(1,11) # choisit au hasard entre 1 des 11 figures
     pos = fig - 1
-    if A[pos] == 0:
-        A[pos] = 1
+    if M[pos] == 0:
+       M[pos] = 1
     n = n + 1
-    afficheCoefficient(A)
-    print("Fin affichage tirage n° ",n)
+    print("pour n = ",n)
+    afficher(M)
 
-print("le nombre d'achat pour avoir toutes les figures = ", n)
-print("Notre matrice A contient maintenant :")
-#afficheCoefficient(A)
+
 
