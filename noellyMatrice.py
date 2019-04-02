@@ -18,7 +18,7 @@ def prod(M):
 
 def afficher(A):
     for i in range(np.size(A)):
-        print("i = ",i, "valeur = ",A[i])
+        print("i = {:2d} valeur = {:2d} ".format(i,A[i]))
 
 def zeros(a,b):
     A = np.array([0*x for x in range(a,b)])
