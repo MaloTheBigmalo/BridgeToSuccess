@@ -9,7 +9,7 @@ from random import randint
 import numpy as np
 
 
-def numbers_to_strings(argument):
+def change_numeroFigurine_a_nomJoueur(argument):
     switcher = {
             0:"Figurine Absente",
             1:"Lloris",
@@ -38,7 +38,7 @@ def zeros(a,b):
 
 def afficher(A):
     for i in range(np.size(A)):
-        print("Figurine n° {:2d} --> {}".format(i,numbers_to_strings(A[i])))
+        print("Figurine n° {:2d} --> {}".format(i+1,change_numeroFigurine_a_nomJoueur(A[i])))
 
 def prod(A):
     resultat = 1

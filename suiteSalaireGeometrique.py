@@ -7,6 +7,7 @@ taux=0.01
 coefficient= 1 + taux
 
 while sal < 7400:
+    print("n: ",n,"salaire: ",sal)
     sal = sal*coefficient
     n = n + 1
 print(n,"mois")

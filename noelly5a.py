@@ -23,11 +23,8 @@ def afficher(A):
 def zeros(a,b):
     A = np.array([0*x for x in range(a,b)])
     return A
-
-
 M = zeros(1,12)
 n = 0
-
 
 while prod(M) < 1 :
     fig = randint(1,11) # choisit au hasard entre 1 des 11 figures
